@@ -1,2 +1,2 @@
-# dummy-resume
+# Dummy Resume
 Dummy resume
