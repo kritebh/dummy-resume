@@ -1,2 +1,2 @@
 # Dummy Resume
-Dummy resume
+This is a Dummy Resume based on Django Framework and Bootstrap.
