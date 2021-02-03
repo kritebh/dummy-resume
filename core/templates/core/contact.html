@@ -1,0 +1,95 @@
+ {% extends 'core/base.html' %}
+{% load static %}
+{% block corecss %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'core/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'core/js/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'core/js/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'core/js/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/main.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+
+{% endblock corecss %}
+ {% block content %}
+ <div class="container mt-5">
+ <h1 class="text-warning mb-5 border-bottom">Contact Me</h1>
+ <div class="row text-white mb-5">
+
+
+	<div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact100">
+			<div class="wrap-contact100">
+				<div class="contact100-pic js-tilt" data-tilt>
+					<img src="{% static 'core/images/contact.png' %}" alt="BG-IMG">
+				</div>
+
+				<form class="contact100-form validate-form">
+					<span class="contact100-form-title">
+						Contact Me!
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Name is required">
+						<input class="input100" type="text" name="name" placeholder="Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Message is required">
+						<textarea class="input100" name="message" placeholder="Message"></textarea>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-contact100-form-btn">
+						<button class="contact100-form-btn">
+							Send
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->
+	{% comment %} <script src="core/js/vendor/jquery/jquery-3.2.1.min.js"></script> {% endcomment %}
+<!--===============================================================================================-->
+	{% comment %} <script src="core/js/vendor/bootstrap/js/popper.js"></script>
+	<script src="core/js/vendor/bootstrap/js/bootstrap.min.js"></script> {% endcomment %}
+<!--===============================================================================================-->
+	
+ </div>
+ </div>
+ 
+ {% endblock content %}
+
+ {% block script %}
+ <script src="{% static 'core/js/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'core/js/vendor/tilt/tilt.jquery.min.js' %}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'core/js/contact.js' %}"></script>
+ {% endblock script %}
