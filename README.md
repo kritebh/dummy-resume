@@ -7,7 +7,7 @@ This is a simple dummy resume based on Django Framework and Bootstrap.
 
 I have used three app in this project -
 
-- core - This is main app which is for whole project.
+- core - This is main app for whole project.
 - edu - This app is for skill page.
 - serv - This app is for Services page
 
