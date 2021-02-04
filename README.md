@@ -10,6 +10,8 @@ I have used three app in this project -
 - core - This is main app for whole project.
 - edu - This app is for skill page.
 - serv - This app is for Services page
+### Live Link - [Resume Project](https://raushan2020.pythonanywhere.com/)
+
 
 Whole tutorial of this project is available at [Geekyshows YouTube Channel](https://www.youtube.com/channel/UCc5FkTYiWH5L3Gk5IyW6Rmw)
 
